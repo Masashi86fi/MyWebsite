@@ -2,51 +2,84 @@
 <html>
     <div class="main">
 
-        <h1>MYLOGO.COM</h1>
-        <hr>
+        <!DOCTYPE html>
+        <html>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <body>
         
-        <h2>PORTFOLIO</h2>
-        <p>Resize the browser window to see the responsive effect.</p>
-        
-        <!-- Portfolio Gallery Grid -->
-        <div class="row">
-          <div class="column">
-            <div class="content">
-              <img src="mountains.jpg" alt="Mountains" style="width:100%">
-              <h3>My Work</h3>
-              <p>Lorem ipsum..</p>
-            </div>
-          </div>
-          <div class="column">
-            <div class="content">
-              <img src="lights.jpg" alt="Lights" style="width:100%">
-              <h3>My Work</h3>
-              <p>Lorem ipsum..</p>
-            </div>
-          </div>
-          <div class="column">
-            <div class="content">
-              <img src="nature.jpg" alt="Nature" style="width:100%">
-              <h3>My Work</h3>
-              <p>Lorem ipsum..</p>
-            </div>
-          </div>
-          <div class="column">
-            <div class="content">
-              <img src="mountains.jpg" alt="Mountains" style="width:100%">
-              <h3>My Work</h3>
-              <p>Lorem ipsum..</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="content">
-          <img src="bear.jpg" alt="Bear" style="width:100%">
-          <h3>Some Other Work</h3>
-          <p>Lorem ipsum..</p>
-        </div>
-        
-        <!-- END MAIN -->
-        </div>
+        <!-- Content will go here -->
+        <!-- Navigation -->
+            <nav class="w3-bar w3-black">
+                <a href="#home" class="w3-button w3-bar-item">Home</a>
+                <a href="#band" class="w3-button w3-bar-item">Me</a>
+                <a href="#tour" class="w3-button w3-bar-item">Works</a>
+                <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+            </nav>
+            <!-- Slide Show -->
+            <section>
+                <img class="mySlides" src="AsakusaTemppeli.jpg" style="width:100%">
+                <img class="mySlides" src="SakuraUenoPark17.JPG" style="width:100%">
+                <img class="mySlides" src="TokyoSkytree.JPG" style="width:100%">
+            </section>
+
+            <section class="w3-container w3-center" style="max-width:600px">
+                <h2 class="w3-wide">Matti Anttila aka Masashi86</h2>
+                <p class="w3-opacity"><i>We love music</i></p>
+            </section>
+            <section class="w3-container w3-content w3-center" style="max-width:600px">
+                <p class="w3-justify">
+                This is a test for my portfiolio website, using Github Pages
+                </p>
+            </section>
+
+            <section class="w3-row-padding w3-center w3-light-grey">
+                <article class="w3-third">
+                  <p>UnityTreenit</p>
+                  <img src="UnityTreenitLogoTransp2017.png" alt="Random Name" style="width:100%">
+                </article>
+                <article class="w3-third">
+                  <p>Space Odyssey</p>
+                  <img src="SpaceOdysseyPrototype.jpg" alt="Random Name" style="width:100%">
+                </article>
+                <article class="w3-third">
+                  <p>ArtificialPrincess</p>
+                  <img src="Glooming.jpg" alt="Random Name" style="width:100%">
+                </article>
+              </section>
+
+              <!-- Footer -->
+            <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+                <a href="#"><i class="fa fa-facebook-official"></i></a>
+                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-flickr"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <p class="w3-medium">
+                Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+                </p>
+            </footer>
+
+            <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}
+                x[myIndex-1].style.display = "block";
+                setTimeout(carousel, 3000);
+            }
+            </script>
+
+        </body>
+        </html>
 
 </html>
